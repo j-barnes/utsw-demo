@@ -90,11 +90,7 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "patches": {
-            "drupal/lb_block_decorator": {
-                "Remove legacy trait": "./patches/remove-old-trait-from-lb-block-decorator.patch"
-            }
-        },
+        "patches": {},
         "drupal-core-project-message": {
             "include-keys": [
                 "homepage",
