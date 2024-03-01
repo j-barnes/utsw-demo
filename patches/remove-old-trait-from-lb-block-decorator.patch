@@ -1,0 +1,20 @@
+diff --git a/src/Form/BlockDecoratorForm.php b/src/Form/BlockDecoratorForm.php
+index e5381f2..9bb0fb5 100644
+--- a/src/Form/BlockDecoratorForm.php
++++ b/src/Form/BlockDecoratorForm.php
+@@ -12,7 +12,6 @@ use Drupal\layout_builder\Context\LayoutBuilderContextTrait;
+ use Drupal\layout_builder\Controller\LayoutRebuildTrait;
+ use Drupal\layout_builder\LayoutBuilderHighlightTrait;
+ use Drupal\layout_builder\LayoutTempstoreRepositoryInterface;
+-use Drupal\layout_builder\SectionComponentTrait;
+ use Drupal\layout_builder\SectionStorageInterface;
+ use Symfony\Component\DependencyInjection\ContainerInterface;
+ 
+@@ -28,7 +27,6 @@ class BlockDecoratorForm extends FormBase implements BlockDecoratorFormInterface
+   use LayoutBuilderContextTrait;
+   use LayoutBuilderHighlightTrait;
+   use LayoutRebuildTrait;
+-  use SectionComponentTrait;
+ 
+   /**
+    * The form builder.

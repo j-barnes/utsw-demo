@@ -1,0 +1,22 @@
+uuid: 4d1d30c4-0e08-4542-8efb-dadb8bd19b30
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.video
+    - field.field.block_content.video.field_video
+id: block_content.video.default
+targetEntityType: block_content
+bundle: video
+mode: default
+content:
+  field_video:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

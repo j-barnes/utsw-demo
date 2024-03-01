@@ -1,0 +1,29 @@
+uuid: 7e4fc8df-0b2a-4449-b8ad-24c159160637
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.video
+    - core.entity_view_mode.block_content.full
+    - field.field.block_content.video.field_video
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: block_content.video.full
+targetEntityType: block_content
+bundle: video
+mode: full
+content:
+  field_video:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: media_library
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

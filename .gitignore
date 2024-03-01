@@ -1,0 +1,150 @@
+/vendor
+/docroot/core
+/docroot/libraries
+/docroot/modules/contrib
+/docroot/profiles/contrib
+/docroot/themes/contrib
+/docroot/sites/*/files
+docroot/sites/example.settings.local.php
+/docroot/sites/example.settings.local.php
+/drush/Commands
+/.editorconfig
+.gitattributes
+web.config
+acert
+
+# Ignore configuration files that may contain sensitive information.
+local.settings.php
+settings.local.php
+local.drush.yml
+local.site.yml
+local.services.yml
+tests/behat/local.yml
+box/local.config.yml
+*.local
+local.blt.yml
+.bash_aliases
+id_rsa
+
+# BLT generated files, prevent dirty files.
+docroot/sites/default/settings
+docroot/sites/settings
+
+# DDEV config
+/.ddev/homeadditions/*
+
+# VScode local
+.vscode/settings.json
+
+# Ignore paths that contain user-generated content.
+/files-private
+/docroot/sites/*/private
+
+# Ignore custom theme build artifacts
+/docroot/themes/custom/*/node_modules
+/docroot/themes/custom/*/css
+/docroot/themes/custom/*/styleguide
+
+# Ignore build artifacts
+deployment_identifier
+/deploy
+bin/*
+tmp
+reports
+node_modules
+
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpathk
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# User-specific stuff:
+.idea/
+.gitconfig
+
+#XHProf
+xhprof_*
+
+#Sass
+.sass-cache
+*.css.map
+
+#Netbeans IDE
+nbproject
+nbproject/*
+
+# DrupalVM
+.vagrant/
+
+# DevDesktop
+*.dd
+
+#Exports
+*.gz
+*.sql
+*.zip
+
+#NPM
+npm-debug.log
+
+# Drush 9 Checksums
+drush/sites/.checksums
+
+# Deprecation detector rules
+.rules
+
+# YARN
+yarn-error.log
+.zsh_history
+/travis_wait*
+.phpcs-cache
+
+# Tests
+.phpunit.result.cache
+docroot/sites/simpletest/*
+tests/cypress/screenshots/*
+tests/cypress/videos/*
+tests/cypress/results/*
+tests/cypress/downloads/*
+tests/phpunit/results/*
+runner-results/*
+
+# Task
+.task
+.twig-cs-fixer.cache
+.task/*
+.twig-cs-fixer.cache/*

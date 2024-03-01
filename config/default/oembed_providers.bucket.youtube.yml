@@ -1,0 +1,9 @@
+uuid: 29eab242-8c8d-4b9a-bf8e-bb5d24b9af01
+langcode: en
+status: true
+dependencies: {  }
+id: youtube
+label: Youtube
+description: ''
+providers:
+  - YouTube

@@ -1,0 +1,14 @@
+uuid: ef5fd1a1-c5f9-49a4-8bba-329b3f3d3c7b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - metrowebz@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
