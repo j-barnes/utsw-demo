@@ -1,0 +1,8 @@
+uuid: e023786c-5cef-4aa1-abd2-352b628c140c
+langcode: en
+status: true
+dependencies: {  }
+id: full_width_banner_and_slider
+label: 'Carousel Slider'
+revision: 0
+description: ''

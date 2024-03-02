@@ -1,0 +1,24 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+<div {{ attributes.addClass(classes) }}>
+  <div class="image-container">
+    {{ content.field_slide_image }}
+  </div>
+
+  <div class="position-absolute bottom-0 start-50 translate-middle-x w-100 d-flex flex-column justify-content-end p-4" style="background: rgba(0, 0, 0, 0.5);">
+    <h2 class="text-white">
+      <a class="text-light text-underline-hover" href="{{ paragraph.field_title.0.url }}">
+          {{ paragraph.field_title.0.title }}
+      </a>
+    </h2>
+    <p class="text-light mt-2">{{ paragraph.field_description.value }}</p>
+  </div>
+</div>
+{% endblock paragraph %}

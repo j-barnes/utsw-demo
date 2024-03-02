@@ -1,0 +1,36 @@
+uuid: 985d8fc4-6912-4379-81aa-c2a240d2b7f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.full_width_banner_and_slider
+    - field.field.block_content.full_width_banner_and_slider.field_carousel_slides
+  module:
+    - paragraphs
+id: block_content.full_width_banner_and_slider.default
+targetEntityType: block_content
+bundle: full_width_banner_and_slider
+mode: default
+content:
+  field_carousel_slides:
+    type: paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: slide
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        convert: '0'
+        duplicate: duplicate
+    third_party_settings: {  }
+hidden:
+  info: true

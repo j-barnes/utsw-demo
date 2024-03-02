@@ -3,10 +3,10 @@ _core:
 b5_body_schema: none
 b5_body_bg_schema: none
 b5_navbar_schema: dark
-b5_navbar_bg_schema: dark
+b5_navbar_bg_schema: primary
 b5_footer_schema: dark
 b5_footer_bg_schema: secondary
-b5_top_container: 'container-fluid m-0 p-0'
+b5_top_container: container
 b5_top_container_config: ''
 features:
   node_user_picture: 1
@@ -14,9 +14,12 @@ features:
   comment_user_verification: 1
   favicon: 1
 logo:
-  use_default: 1
+  use_default: 0
+  path: themes/custom/b5subtheme/images/utsw-edu-logo.svg
 favicon:
-  use_default: 1
+  use_default: 0
+  path: themes/custom/b5subtheme/images/favicon.png
+  mimetype: image/png
 subtheme_folder: themes/custom
 subtheme_name: 'B5 subtheme'
 subtheme_machine_name: b5subtheme

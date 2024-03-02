@@ -1,0 +1,37 @@
+uuid: f55ac27a-eaba-400d-80e4-892eee2273c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_card
+    - field.field.block_content.link_card.field_card_image
+    - field.field.block_content.link_card.field_title
+  module:
+    - link
+id: block_content.link_card.default
+targetEntityType: block_content
+bundle: link_card
+mode: default
+content:
+  field_card_image:
+    type: entity_reference_entity_view
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: link
+    label: visually_hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

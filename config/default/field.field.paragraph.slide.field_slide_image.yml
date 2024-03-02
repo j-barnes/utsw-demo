@@ -1,0 +1,29 @@
+uuid: 79389146-4376-448a-b874-a3afd3d4e9ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slide_image
+    - media.type.image
+    - paragraphs.paragraphs_type.slide
+id: paragraph.slide.field_slide_image
+field_name: field_slide_image
+entity_type: paragraph
+bundle: slide
+label: 'Slide Image'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

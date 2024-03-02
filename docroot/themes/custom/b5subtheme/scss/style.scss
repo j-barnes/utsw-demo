@@ -7,3 +7,6 @@
 
 // Include bootstrap.
 @import '../../../../themes/contrib/bootstrap5/scss/style';
+
+// Manually import, glob later.
+@import 'misc/slick-slider.scss';

@@ -1,0 +1,33 @@
+uuid: 6b0f3a71-1cfd-4ab3-95ca-f9967ceee7ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_card
+    - field.field.block_content.link_card.field_card_image
+    - field.field.block_content.link_card.field_title
+  module:
+    - link
+    - media_library
+id: block_content.link_card.default
+targetEntityType: block_content
+bundle: link_card
+mode: default
+content:
+  field_card_image:
+    type: media_library_widget
+    weight: 1
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_title:
+    type: link_default
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  info: true

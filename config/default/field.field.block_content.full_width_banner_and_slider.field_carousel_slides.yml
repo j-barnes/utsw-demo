@@ -1,0 +1,31 @@
+uuid: 8ab19862-ef8e-4cab-8269-34b367122863
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.full_width_banner_and_slider
+    - field.storage.block_content.field_carousel_slides
+    - paragraphs.paragraphs_type.slide
+  module:
+    - entity_reference_revisions
+id: block_content.full_width_banner_and_slider.field_carousel_slides
+field_name: field_carousel_slides
+entity_type: block_content
+bundle: full_width_banner_and_slider
+label: 'Carousel Slides'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      slide: slide
+    negate: 0
+    target_bundles_drag_drop:
+      slide:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

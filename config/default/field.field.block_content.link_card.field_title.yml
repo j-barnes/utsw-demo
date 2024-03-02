@@ -1,0 +1,23 @@
+uuid: 3070c095-7384-4738-a054-9b40483c4976
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_card
+    - field.storage.block_content.field_title
+  module:
+    - link
+id: block_content.link_card.field_title
+field_name: field_title
+entity_type: block_content
+bundle: link_card
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

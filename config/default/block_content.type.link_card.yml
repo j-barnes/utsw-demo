@@ -1,0 +1,8 @@
+uuid: 128c6c0e-f582-449e-939a-bdc8b34cf288
+langcode: en
+status: true
+dependencies: {  }
+id: link_card
+label: 'Link Card'
+revision: 0
+description: ''

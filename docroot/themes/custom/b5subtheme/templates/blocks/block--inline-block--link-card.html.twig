@@ -1,0 +1,17 @@
+{% set classes = [
+  'card',
+  'rounded-0',
+  'block',
+  'block-' ~ configuration.provider|clean_class,
+  'block-' ~ plugin_id|clean_class,
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+  {% set card_image = content.field_card_image['#items'][0].entity.field_media_image.entity %}
+  {% if card_image %}
+    <img src="{{ file_url(card_image.uri.value) }}" class="card-img-top" alt="...">
+  {% endif %}
+  <div class="card-body">
+    <h5 class="card-title">{{ content.field_title }}</h5>
+  </div>
+</div>
