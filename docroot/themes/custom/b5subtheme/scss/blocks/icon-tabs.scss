@@ -1,0 +1,17 @@
+.icon-tabs {
+  .nav-link {
+    color: #225994 !important;
+    background-color: rgba(53,167,208,.08);
+    font-size: 1.25rem;
+    padding: .75rem 1.875rem;
+
+    &:hover {
+      background-color: #f1f1f1;
+      color: #225994 !important;
+    }
+    &.active {
+      background-color: #e5e5e5;
+      border-bottom: 3px solid #4fb5eb;
+    }
+  }
+}

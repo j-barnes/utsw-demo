@@ -1,0 +1,8 @@
+uuid: eb37298c-3ec1-4470-90c0-a432f32e35e3
+langcode: en
+status: true
+dependencies: {  }
+id: icon_tabs
+label: 'Icon Tabs'
+revision: 0
+description: ''

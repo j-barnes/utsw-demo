@@ -1,0 +1,45 @@
+{% set classes = [
+  'block',
+  'block-' ~ configuration.provider|clean_class,
+  'block-' ~ plugin_id|clean_class,
+  'icon-tabs'
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+
+
+  <ul class="nav nav-pills nav-fill gap-4 my-4" role="tablist">
+    {% for key, tab in content.field_tab %}
+      {% if key|first != '#' %}
+        {% set tab_title_class = tab['#paragraph'].field_tab_title.value|clean_class %}
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-0 fw-bold d-flex flex-column align-items-center justify-content-center {{ key == 0 ? 'active' : '' }}" id="{{ tab_title_class }}-tab" data-bs-toggle="pill" data-bs-target="#{{ tab_title_class }}" type="button" role="tab" aria-controls="{{ tab_title_class }}" aria-selected="true">
+            {% if tab['#paragraph'].field_icon.entity.field_media_image %}
+              <img class="my-2" width="65" height="40" src="{{ file_url(tab['#paragraph'].field_icon.entity.field_media_image.entity.uri.value) }}" alt="{{ tab['#paragraph'].field_icon.entity.field_media_image.alt }}" aria-hidden="true">
+            {% endif %}
+            <div class="text-container">
+              {{ tab['#paragraph'].field_tab_title.value }}
+            </div>
+          </button>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <div class="tab-content">
+    {% for key, tab in content.field_tab %}
+      {% if key|first != '#' %}
+        {% set tab_title_class = tab['#paragraph'].field_tab_title.value|clean_class %}
+        <div class="tab-pane fade {{ key == 0 ? 'show active' : '' }}" id="{{ tab_title_class }}" role="tabpanel" aria-labelledby="{{ tab_title_class }}-tab" tabindex="0">
+          {{ tab['#paragraph'].field_text.value|check_markup(tab['#paragraph'].field_text.format) }}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+

@@ -19,8 +19,13 @@ settings:
       - superscript
       - subscript
       - removeFormat
+      - undo
+      - redo
       - '|'
       - link
+      - alignment
+      - indent
+      - outdent
       - '|'
       - bulletedList
       - numberedList
@@ -35,6 +40,12 @@ settings:
       - '|'
       - sourceEditing
   plugins:
+    ckeditor5_alignment:
+      enabled_alignments:
+        - center
+        - justify
+        - left
+        - right
     ckeditor5_codeBlock:
       languages:
         -

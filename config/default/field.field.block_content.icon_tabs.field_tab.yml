@@ -1,0 +1,34 @@
+uuid: e51040cb-c96c-4d52-906f-a363b37bfdde
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.icon_tabs
+    - field.storage.block_content.field_tab
+    - paragraphs.paragraphs_type.tab
+  module:
+    - entity_reference_revisions
+id: block_content.icon_tabs.field_tab
+field_name: field_tab
+entity_type: block_content
+bundle: icon_tabs
+label: Tab
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      tab: tab
+    negate: 0
+    target_bundles_drag_drop:
+      slide:
+        weight: 3
+        enabled: false
+      tab:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

@@ -12,9 +12,9 @@
     <h2{{ title_attributes }}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
-  {% set card_image = content.field_card_image['#items'][0].entity.field_media_image.entity %}
+  {% set card_image = content.field_card_image['#items'][0].entity.field_media_image %}
   {% if card_image %}
-    <img src="{{ file_url(card_image.uri.value) }}" class="card-img-top" alt="...">
+    <img src="{{ file_url(card_image.entity.uri.value) }}" class="card-img-top rounded=0" alt="{{ card_image.alt }}">
   {% endif %}
   <div class="card-body">
     <h5 class="card-title">{{ content.field_title }}</h5>

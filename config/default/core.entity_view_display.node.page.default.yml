@@ -482,6 +482,7 @@ third_party_settings:
     promoted_blocks:
       'inline_block:basic': 'inline_block:basic'
       'inline_block:full_width_banner_and_slider': 'inline_block:full_width_banner_and_slider'
+      'inline_block:icon_tabs': 'inline_block:icon_tabs'
       'inline_block:image': 'inline_block:image'
       'inline_block:link_card': 'inline_block:link_card'
       'inline_block:video': 'inline_block:video'
@@ -492,6 +493,7 @@ third_party_settings:
         'inline_block:image': /themes/custom/b5subtheme/images/component-icons/image.svg
         'inline_block:link_card': /themes/custom/b5subtheme/images/component-icons/link-card.svg
         'inline_block:video': /themes/custom/b5subtheme/images/component-icons/video.svg
+        'inline_block:icon_tabs': /themes/custom/b5subtheme/images/component-icons/tabs.svg
     default_section:
       layout_plugin: layout_onecol
       label: 'One column default'
