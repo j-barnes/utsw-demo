@@ -1,0 +1,55 @@
+.lb-plus-toolbar {
+  border-top: 5px solid #223045;
+}
+
+#lb-plus-sidebar {
+  border-left: 5px solid #223045;
+  #choose-block-tabs {
+    background-color: #223045;
+    border-bottom: 2px solid #817f8a;
+    padding: 1em 0;
+    margin: 0 0 0.5em 0;
+  }
+  #promoted-block-content {
+    &.active {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 10px;
+    }
+
+    .draggable-block, .draggable-section {
+      &:hover {
+        border: 2px solid #374d6e;
+      }
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #374d6e;
+      border: 2px dashed #817f8a;
+      border-radius: 3px;
+      box-sizing: border-box;
+      margin: 0.5em;
+      gap: 0.5em;
+      cursor: grab;
+
+      .draggable-block-image {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 0px;
+      }
+
+      &#empty-section {
+        .draggable-block-image {
+          transform: scale(0.65);
+        }
+      }
+
+      .draggable-block-label {
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+  }
+}
