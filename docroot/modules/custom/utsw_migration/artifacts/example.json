@@ -1,0 +1,75 @@
+{
+    "pages": [
+        {
+            "page_title": "UT Southwestern Medical Center",
+            "pid": "https-www-utsouthwestern-edu",
+            "url": "https:\/\/www.utsouthwestern.edu",
+            "components": [
+                {
+                    "bid": "https-www-utsouthwestern-edu|block|icon_link|medical-school",
+                    "title": "Medical School",
+                    "title_link": "https:\/\/www.utsouthwestern.edu\/education\/medical-school\/",
+                    "media_image_url": "https:\/\/www.utsouthwestern.edu\/assets\/edu-nav-card-medical2.jpg",
+                    "media_image_alt": "",
+                    "type": "icon_link"
+                },
+                {
+                    "bid": "https-www-utsouthwestern-edu|block|icon_link|graduate-school-of-biomedical-sciences",
+                    "title": "Graduate School of Biomedical Sciences",
+                    "title_link": "https:\/\/www.utsouthwestern.edu\/education\/graduate-school\/",
+                    "media_image_url": "https:\/\/www.utsouthwestern.edu\/assets\/edu-nav-card-graduate-school2.jpg",
+                    "media_image_alt": "",
+                    "type": "icon_link"
+                },
+                {
+                    "bid": "https-www-utsouthwestern-edu|block|icon_link|school-of-health-professions",
+                    "title": "School of Health Professions",
+                    "title_link": "https:\/\/www.utsouthwestern.edu\/education\/school-of-health-professions\/",
+                    "media_image_url": "https:\/\/www.utsouthwestern.edu\/assets\/edu-nav-card-shp2.jpg",
+                    "media_image_alt": "",
+                    "type": "icon_link"
+                },
+                {
+                    "bid": "https-www-utsouthwestern-edu|block|icon_link|school-of-public-health",
+                    "title": "School of Public Health",
+                    "title_link": "https:\/\/www.utsouthwestern.edu\/education\/public-health\/?gclid=EAIaIQobChMIovbzq6bqggMV5S7UAR1BzgoyEAAYASAAEgLhjvD_BwE",
+                    "media_image_url": "https:\/\/www.utsouthwestern.edu\/assets\/edu-nav-card-sph2.jpg",
+                    "media_image_alt": "",
+                    "type": "icon_link"
+                },
+                {
+                    "bid": "https-www-utsouthwestern-edu|block|icon_link|clinical-research",
+                    "title": "Clinical Research",
+                    "title_link": "https:\/\/www.utsouthwestern.edu\/research\/clinical-research\/",
+                    "media_image_url": "https:\/\/www.utsouthwestern.edu\/assets\/edu-nav-card-clinical-research2.jpg",
+                    "media_image_alt": "",
+                    "type": "icon_link"
+                },
+                {
+                    "bid": "https-www-utsouthwestern-edu|block|icon_link|core-facilities",
+                    "title": "Core Facilities",
+                    "title_link": "https:\/\/www.utsouthwestern.edu\/research\/core-facilities\/",
+                    "media_image_url": "https:\/\/www.utsouthwestern.edu\/assets\/edu-nav-card-core-facilities2.jpg",
+                    "media_image_alt": "",
+                    "type": "icon_link"
+                },
+                {
+                    "bid": "https-www-utsouthwestern-edu|block|icon_link|research-labs",
+                    "title": "Research Labs",
+                    "title_link": "https:\/\/labs.utsouthwestern.edu\/",
+                    "media_image_url": "https:\/\/www.utsouthwestern.edu\/assets\/edu-nav-card-research-labs2.jpg",
+                    "media_image_alt": "",
+                    "type": "icon_link"
+                },
+                {
+                    "bid": "https-www-utsouthwestern-edu|block|icon_link|studyfinder",
+                    "title": "StudyFinder",
+                    "title_link": "https:\/\/clinicaltrials.utswmed.org\/",
+                    "media_image_url": "https:\/\/www.utsouthwestern.edu\/assets\/edu-nav-card-study-finder2.jpg",
+                    "media_image_alt": "",
+                    "type": "icon_link"
+                }
+            ]
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 uuid: 5f2525f2-05a6-474b-a2f9-7039956c3123
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
@@ -9,28 +9,23 @@ dependencies:
     - node.type.page
   module:
     - layout_builder
-    - lb_plus
+    - layout_discovery
     - text
     - user
 third_party_settings:
   layout_builder:
-    enabled: false
-    allow_custom: false
-  lb_plus:
-    promoted_blocks:
-      'inline_block:basic': 'inline_block:basic'
-      'inline_block:full_width_banner_and_slider': 'inline_block:full_width_banner_and_slider'
-      'inline_block:image': 'inline_block:image'
-      'inline_block:video': 'inline_block:video'
-    block_config:
-      icon:
-        'inline_block:basic': /themes/custom/b5subtheme/images/component-icons/basic-block.svg
-        'inline_block:full_width_banner_and_slider': /themes/custom/b5subtheme/images/component-icons/carousel-slider.svg
-        'inline_block:image': /themes/custom/b5subtheme/images/component-icons/image.svg
-        'inline_block:video': /themes/custom/b5subtheme/images/component-icons/video.svg
-    default_section:
-      layout_plugin: layout_onecol
-      label: 'One column default'
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: main
+          context_mapping: {  }
+        components: {  }
+        third_party_settings:
+          lb_plus:
+            uuid: 4d3cc892-ca1c-4661-811a-bb800aa34154
 _core:
   default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
 id: node.page.full

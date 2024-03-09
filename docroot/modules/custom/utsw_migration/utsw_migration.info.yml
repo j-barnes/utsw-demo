@@ -1,0 +1,9 @@
+name: 'UTSW Migration'
+type: module
+description: 'Migrates content from UTSW.'
+package: UTSW
+core_version_requirement: ^10
+dependencies:
+  - drupal:migrate
+  - drupal:migrate_plus
+  - drupal:migrate_tools

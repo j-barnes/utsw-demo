@@ -1,0 +1,88 @@
+id: utsw_block_link_card
+label: 'Example import for Link Card Block'
+migration_group: utsw
+
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: jsonpath
+  urls:
+    - 'modules/custom/utsw_migration/artifacts/example.json'
+  item_selector: $.pages[*].components[?(@.type == 'icon_link')]
+
+  fields:
+    - name: bid
+      selector: bid
+    - name: title
+      selector: title
+    - name: title_link
+      selector: title_link
+    - name: media_image_url
+      selector: media_image_url
+    - name: media_image_alt
+      selector: media_image_alt
+  ids:
+    bid:
+      type: string
+
+  constants:
+    media_file_directory: public://images
+
+process:
+  info: title
+  field_title/uri:
+    - plugin: skip_on_empty
+      method: process
+      source: title_link
+  field_title/title:
+    - plugin: skip_on_empty
+      method: process
+      source: title
+  image_file:
+    - plugin: skip_on_empty
+      method: process
+      source: media_image_url
+    - plugin: file_import
+      destination: media_file_directory
+      id_only: true
+      reuse: true
+  image_name:
+    - plugin: skip_on_empty
+      method: process
+      source: media_image_url
+    - plugin: callback
+      callable: basename
+  field_card_image/target_id:
+    - plugin: skip_on_empty
+      method: process
+      source: media_image_url
+    - plugin: skip_on_empty
+      method: process
+      source: '@image_file'
+    - plugin: entity_generate
+      source: '@image_name'
+      value_key: name
+      bundle_key: bundle
+      bundle: image
+      entity_type: media
+      ignore_case: true
+      values:
+        field_media_image/target_id: '@image_file'
+        field_media_image/alt: media_image_alt
+
+  moderation_state:
+    plugin: default_value
+    default_value: published
+  reusable:
+      plugin: default_value
+      default_value: 0
+
+destination:
+  plugin: entity:block_content
+  default_bundle: link_card
+  no_stub: true
+
+dependencies:
+  enforced:
+    module:
+      - utsw_migration

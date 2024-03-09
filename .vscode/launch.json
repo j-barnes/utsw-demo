@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Chrome",
+      "request": "launch",
+      "type": "chrome",
+      "url": "https://njcourts.ddev.site",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Attach to Chrome",
+      "port": 9222,
+      "request": "attach",
+      "type": "chrome",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Listen for XDebug",
+      "type": "php",
+      "request": "launch",
+      "hostname": "0.0.0.0",
+      "port": 9003,
+      "pathMappings": {
+        "/var/www/html": "${workspaceRoot}"
+      },
+      "ignore": [
+        "**/vendor/**/*"
+      ],
+      "xdebugSettings": {
+        "show_hidden": 1
+      }
+    },
+  ]
+}

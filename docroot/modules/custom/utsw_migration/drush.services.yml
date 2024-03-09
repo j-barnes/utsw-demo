@@ -1,0 +1,5 @@
+services:
+  utsw_migration.commands:
+    class: \Drupal\utsw_migration\Commands\ObtainerCommands
+    tags:
+      - { name: drush.command }

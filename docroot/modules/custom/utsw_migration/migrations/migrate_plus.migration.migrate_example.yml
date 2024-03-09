@@ -1,0 +1,63 @@
+id: utsw_migration_example
+label: Example Migration Scraper - UTSW
+source:
+  plugin: url
+  data_fetcher_plugin: file
+  data_parser_plugin: json
+  urls:
+    - 'modules/custom/utsw_migration/artifacts/example.json'
+  item_selector: pages
+  fields:
+    - name: pid
+      selector: pid
+    - name: page_title
+      selector: page_title
+    - name: components
+      selector: components
+  ids:
+    pid:
+      type: string
+process:
+  title:
+    - plugin: skip_on_empty
+      method: row
+      source: page_title
+      message: 'Title is missing'
+
+  component_ids:
+    plugin: sub_process
+    source: components
+    process:
+      bid:
+        - plugin: migration_lookup
+          source: bid
+          migration: utsw_block_link_card
+          no_stub: true
+        - plugin: block_layout
+          region: content
+
+  layout_builder__layout:
+    - plugin: get
+      source:
+        - '@component_ids'
+    - plugin: default_layout
+      bundle: page
+      display: full
+      section: main
+
+  status:
+    plugin: default_value
+    default_value: 1
+  moderation_state:
+    plugin: default_value
+    default_value: 'published'
+
+destination:
+  plugin: 'entity:node'
+  default_bundle: page
+dependencies:
+  enforced:
+    module:
+      - utsw_migration
+
+# ddev drush m:i utsw_migration_example --sync
