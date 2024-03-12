@@ -33,17 +33,20 @@ process:
           source: bid
           migration: utsw_block_link_card
           no_stub: true
+
+        # This is the parent section
         - plugin: block_layout
-          region: content
+          region: blb_region_col_1
 
   layout_builder__layout:
     - plugin: get
       source:
         - '@component_ids'
+
+    # This is the inside sections.
     - plugin: default_layout
       bundle: page
-      display: full
-      section: main
+      layout_id: bootstrap_layout_builder:blb_col_2
 
   status:
     plugin: default_value

@@ -10,6 +10,7 @@ dependencies:
   module:
     - layout_builder
     - layout_discovery
+    - lb_plus
     - text
     - user
 third_party_settings:
@@ -18,7 +19,7 @@ third_party_settings:
     allow_custom: true
     sections:
       -
-        layout_id: layout_onecol
+        layout_id: bootstrap_layout_builder:blb_col_1
         layout_settings:
           label: main
           context_mapping: {  }
@@ -26,6 +27,19 @@ third_party_settings:
         third_party_settings:
           lb_plus:
             uuid: 4d3cc892-ca1c-4661-811a-bb800aa34154
+  lb_plus:
+    default_section:
+      layout_plugin: bootstrap_layout_builder:blb_col_1
+      label: 'main'
+    promoted_blocks:
+      'inline_block:basic': 'inline_block:basic'
+      'inline_block:full_width_banner_and_slider': 'inline_block:full_width_banner_and_slider'
+      'inline_block:icon_tabs': 'inline_block:icon_tabs'
+      'inline_block:image': 'inline_block:image'
+      'inline_block:link_card': 'inline_block:link_card'
+      'inline_block:video': 'inline_block:video'
+    block_config:
+      icon: {  }
 _core:
   default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
 id: node.page.full

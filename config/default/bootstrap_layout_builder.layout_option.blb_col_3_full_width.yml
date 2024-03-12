@@ -1,4 +1,4 @@
-uuid: ff40fc91-22ff-4598-8fd3-80cfdee3abf5
+uuid: cd0b32bc-2e72-4314-a70a-b0e8c1e83d1e
 langcode: en
 status: true
 dependencies: {  }
@@ -8,8 +8,8 @@ id: blb_col_3_full_width
 layout_id: blb_col_3
 label: 'Full width'
 structure: '12'
+default_breakpoints: null
 breakpoints:
   tablet: tablet
   mobile: mobile
-default_breakpoints: null
 weight: 0

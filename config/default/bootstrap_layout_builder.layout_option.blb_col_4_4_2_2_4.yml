@@ -1,4 +1,4 @@
-uuid: 1b5a59ca-d941-494a-a947-84ab80fb9ca3
+uuid: 96d7f21d-8068-4d16-ae59-913f46ac3350
 langcode: en
 status: true
 dependencies: {  }
@@ -8,9 +8,9 @@ id: blb_col_4_4_2_2_4
 layout_id: blb_col_4
 label: '4/12 2/12 2/12 4/12'
 structure: '4 2 2 4'
+default_breakpoints: null
 breakpoints:
   desktop: desktop
   tablet: tablet
   mobile: mobile
-default_breakpoints: null
 weight: 0

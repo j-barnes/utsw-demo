@@ -1,4 +1,4 @@
-uuid: 11abba70-19ca-4a42-84b6-bdefb22c4bd9
+uuid: 01e952c2-09f1-47c6-865c-1f35dbd08756
 langcode: en
 status: true
 dependencies: {  }
@@ -8,9 +8,9 @@ id: blb_col_4_four_equal_columns
 layout_id: blb_col_4
 label: 'Four equal columns'
 structure: '3 3 3 3'
+default_breakpoints: null
 breakpoints:
   desktop: desktop
   tablet: tablet
   mobile: mobile
-default_breakpoints: null
 weight: -10

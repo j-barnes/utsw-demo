@@ -72,33 +72,16 @@ class DefaultLayout extends ProcessPluginBase implements ContainerFactoryPluginI
   public function transform($value, MigrateExecutableInterface $migrate_executable, Row $row, $destination_property) {
     $components = [];
     $this->flatten($value, $components);
-    $bundle = $this->configuration['bundle'];
-    $section_label = $this->configuration['section'];
-    $display = $this->configuration['display'] ?? 'default';
-    if ($bundle) {
-      $sections = $this->loadDefaultSections($bundle, $display);
-      if (!empty($sections)) {
 
-        $section = NULL;
-        foreach ($sections as $sec) {
-          if ($sec->getLayoutSettings()['label'] == $section_label) {
-            $section = $sec;
-          }
-        }
+    $section = new Section($this->configuration['layout_id']);
 
-        if ($section) {
-          foreach ($components as $component) {
-            $section->appendComponent($component);
-          }
-        }
-
-        return $sections;
-      }
-      else {
-        return NULL;
+    if ($section) {
+      foreach ($components as $component) {
+        $section->appendComponent($component);
       }
     }
-    return $value;
+
+    return $section;
   }
 
 

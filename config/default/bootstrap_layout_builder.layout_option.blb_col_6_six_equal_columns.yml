@@ -1,4 +1,4 @@
-uuid: e06748bf-9b1b-4d3c-827d-952d72f6a47e
+uuid: a41af72a-25c3-4ae6-958f-c90fce4720bc
 langcode: en
 status: true
 dependencies: {  }
@@ -8,9 +8,9 @@ id: blb_col_6_six_equal_columns
 layout_id: blb_col_6
 label: 'Six equal columns'
 structure: '2 2 2 2 2 2'
+default_breakpoints: null
 breakpoints:
   desktop: desktop
   tablet: tablet
   mobile: mobile
-default_breakpoints: null
 weight: 0
