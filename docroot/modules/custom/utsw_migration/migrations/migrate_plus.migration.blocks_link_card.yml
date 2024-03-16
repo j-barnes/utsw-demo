@@ -7,12 +7,12 @@ source:
   data_fetcher_plugin: file
   data_parser_plugin: jsonpath
   urls:
-    - 'modules/custom/utsw_migration/artifacts/example.json'
-  item_selector: $.pages[*].components[?(@.type == 'icon_link')]
+    - 'modules/custom/utsw_migration/artifacts/example_layouts.json'
+  item_selector: $.pages[*].layout.sections[*].components[?(@.type == 'icon_link')]
 
   fields:
-    - name: bid
-      selector: bid
+    - name: id
+      selector: configuration.id
     - name: title
       selector: title
     - name: title_link
@@ -22,7 +22,7 @@ source:
     - name: media_image_alt
       selector: media_image_alt
   ids:
-    bid:
+    id:
       type: string
 
   constants:
@@ -30,6 +30,10 @@ source:
 
 process:
   info: title
+  id: id
+  uid:
+    plugin: default_value
+    default_value: 1
   field_title/uri:
     - plugin: skip_on_empty
       method: process

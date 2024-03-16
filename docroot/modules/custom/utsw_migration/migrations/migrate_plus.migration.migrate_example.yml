@@ -5,7 +5,7 @@ source:
   data_fetcher_plugin: file
   data_parser_plugin: json
   urls:
-    - 'modules/custom/utsw_migration/artifacts/example.json'
+    - 'modules/custom/utsw_migration/artifacts/example_layouts.json'
   item_selector: pages
   fields:
     - name: pid
@@ -14,6 +14,8 @@ source:
       selector: page_title
     - name: components
       selector: components
+    - name: layout
+      selector: layout
   ids:
     pid:
       type: string
@@ -24,29 +26,33 @@ process:
       source: page_title
       message: 'Title is missing'
 
-  component_ids:
-    plugin: sub_process
-    source: components
-    process:
-      bid:
-        - plugin: migration_lookup
-          source: bid
-          migration: utsw_block_link_card
-          no_stub: true
+  # component_ids:
+  #   plugin: sub_process
+  #   source: components
+  #   process:
+  #     bid:
+  #       - plugin: migration_lookup
+  #         source: bid
+  #         migration: utsw_block_link_card
+  #         no_stub: true
 
-        # This is the parent section
-        - plugin: block_layout
-          region: blb_region_col_1
+  #       # This is the parent section
+  #       - plugin: block_layout
+  #         region: blb_region_col_1
+
+  # layout_builder__layout:
+    # - plugin: get
+    #   source:
+    #     - '@component_ids'
+
+    # # This is the inside sections.
+    # - plugin: default_layout
+    #   bundle: page
+    #   layout_id: bootstrap_layout_builder:blb_col_2
 
   layout_builder__layout:
-    - plugin: get
-      source:
-        - '@component_ids'
-
-    # This is the inside sections.
-    - plugin: default_layout
-      bundle: page
-      layout_id: bootstrap_layout_builder:blb_col_2
+    plugin: utsw_layout_plugin_id
+    source: layout
 
   status:
     plugin: default_value

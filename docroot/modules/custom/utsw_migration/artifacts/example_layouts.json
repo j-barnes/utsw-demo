@@ -1,0 +1,184 @@
+{
+    "pages": [
+        {
+            "page_title": "UT Southwestern Medical Center",
+            "pid": "https-www-utsouthwestern-edu",
+            "url": "https:\/\/www.utsouthwestern.edu",
+            "layout": {
+                "sections": [
+                    {
+                        "layout_id": "bootstrap_layout_builder:blb_col_2",
+                        "layout_settings": {
+                            "layout": {
+                                "wrapper": "div",
+                                "classes": {},
+                                "add_layout_class": 1,
+                                "attributes": ""
+                            },
+                            "regions": {
+                                "blb_region_col_1": {
+                                    "wrapper": "div",
+                                    "classes": {},
+                                    "add_layout_class": 1,
+                                    "attributes": ""
+                                },
+                                "blb_region_col_2": {
+                                    "wrapper": "div",
+                                    "classes": {},
+                                    "add_layout_class": 1,
+                                    "attributes": ""
+                                }
+                            }
+                        },
+                        "components": [
+                            {
+                                "region": "blb_region_col_1",
+                                "type": "icon_link",
+                                "configuration": {
+                                    "id": "block_content:https-www-utsouthwestern-edu|icon_link|medical-school",
+                                    "label": "Medical School",
+                                    "provider": "block_content",
+                                    "migration": "utsw_block_link_card",
+                                    "label_display": 0,
+                                    "view_mode": "default",
+                                    "context_mapping": {}
+                                },
+                                "title": "Medical School",
+                                "title_link": "https:\/\/www.utsouthwestern.edu\/education\/medical-school\/",
+                                "media_image_url": "https:\/\/www.utsouthwestern.edu\/assets\/edu-nav-card-medical2.jpg",
+                                "media_image_alt": ""
+                            },
+                            {
+                                "region": "blb_region_col_1",
+                                "type": "icon_link",
+                                "configuration": {
+                                    "id": "block_content:https-www-utsouthwestern-edu|icon_link|graduate-school-of-biomedical-sciences",
+                                    "label": "Graduate School of Biomedical Sciences",
+                                    "provider": "block_content",
+                                    "migration": "utsw_block_link_card",
+                                    "bundle": "icon_link",
+                                    "label_display": 0,
+                                    "view_mode": "default",
+                                    "context_mapping": {}
+                                },
+                                "title": "Graduate School of Biomedical Sciences",
+                                "title_link": "https:\/\/www.utsouthwestern.edu\/education\/graduate-school\/",
+                                "media_image_url": "https:\/\/www.utsouthwestern.edu\/assets\/edu-nav-card-graduate-school2.jpg",
+                                "media_image_alt": ""
+                            },
+                            {
+                                "region": "blb_region_col_1",
+                                "type": "icon_link",
+                                "configuration": {
+                                    "id": "block_content:https-www-utsouthwestern-edu|icon_link|school-of-health-professions",
+                                    "label": "School of Health Professions",
+                                    "provider": "block_content",
+                                    "migration": "utsw_block_link_card",
+                                    "bundle": "icon_link",
+                                    "label_display": 0,
+                                    "view_mode": "default",
+                                    "context_mapping": {}
+                                },
+                                "title": "School of Health Professions",
+                                "title_link": "https:\/\/www.utsouthwestern.edu\/education\/school-of-health-professions\/",
+                                "media_image_url": "https:\/\/www.utsouthwestern.edu\/assets\/edu-nav-card-shp2.jpg",
+                                "media_image_alt": ""
+                            },
+                            {
+                                "region": "blb_region_col_1",
+                                "type": "icon_link",
+                                "configuration": {
+                                    "id": "block_content:https-www-utsouthwestern-edu|icon_link|school-of-public-health",
+                                    "label": "School of Public Health",
+                                    "provider": "block_content",
+                                    "migration": "utsw_block_link_card",
+                                    "bundle": "icon_link",
+                                    "label_display": 0,
+                                    "view_mode": "default",
+                                    "context_mapping": {}
+                                },
+                                "title": "School of Public Health",
+                                "title_link": "https:\/\/www.utsouthwestern.edu\/education\/public-health\/?gclid=EAIaIQobChMIovbzq6bqggMV5S7UAR1BzgoyEAAYASAAEgLhjvD_BwE",
+                                "media_image_url": "https:\/\/www.utsouthwestern.edu\/assets\/edu-nav-card-sph2.jpg",
+                                "media_image_alt": ""
+                            },
+                            {
+                                "region": "blb_region_col_1",
+                                "type": "icon_link",
+                                "configuration": {
+                                    "id": "block_content:https-www-utsouthwestern-edu|icon_link|clinical-research",
+                                    "label": "Clinical Research",
+                                    "provider": "block_content",
+                                    "migration": "utsw_block_link_card",
+                                    "bundle": "icon_link",
+                                    "label_display": 0,
+                                    "view_mode": "default",
+                                    "context_mapping": {}
+                                },
+                                "title": "Clinical Research",
+                                "title_link": "https:\/\/www.utsouthwestern.edu\/research\/clinical-research\/",
+                                "media_image_url": "https:\/\/www.utsouthwestern.edu\/assets\/edu-nav-card-clinical-research2.jpg",
+                                "media_image_alt": ""
+                            },
+                            {
+                                "region": "blb_region_col_1",
+                                "type": "icon_link",
+                                "configuration": {
+                                    "id": "block_content:https-www-utsouthwestern-edu|icon_link|core-facilities",
+                                    "label": "Core Facilities",
+                                    "provider": "block_content",
+                                    "migration": "utsw_block_link_card",
+                                    "bundle": "icon_link",
+                                    "label_display": 0,
+                                    "view_mode": "default",
+                                    "context_mapping": {}
+                                },
+                                "id": "block_content:https-www-utsouthwestern-edu|icon_link|core-facilities",
+                                "title": "Core Facilities",
+                                "title_link": "https:\/\/www.utsouthwestern.edu\/research\/core-facilities\/",
+                                "media_image_url": "https:\/\/www.utsouthwestern.edu\/assets\/edu-nav-card-core-facilities2.jpg",
+                                "media_image_alt": ""
+                            },
+                            {
+                                "region": "blb_region_col_1",
+                                "type": "icon_link",
+                                "configuration": {
+                                    "id": "block_content:https-www-utsouthwestern-edu|icon_link|research-labs",
+                                    "label": "Research Labs",
+                                    "provider": "block_content",
+                                    "migration": "utsw_block_link_card",
+                                    "bundle": "icon_link",
+                                    "label_display": 0,
+                                    "view_mode": "default",
+                                    "context_mapping": {}
+                                },
+                                "title": "Research Labs",
+                                "title_link": "https:\/\/labs.utsouthwestern.edu\/",
+                                "media_image_url": "https:\/\/www.utsouthwestern.edu\/assets\/edu-nav-card-research-labs2.jpg",
+                                "media_image_alt": ""
+                            },
+                            {
+                                "region": "blb_region_col_1",
+                                "type": "icon_link",
+                                "configuration": {
+                                    "id": "block_content:https-www-utsouthwestern-edu|icon_link|studyfinder",
+                                    "label": "StudyFinder",
+                                    "provider": "block_content",
+                                    "migration": "utsw_block_link_card",
+                                    "bundle": "icon_link",
+                                    "label_display": 0,
+                                    "view_mode": "default",
+                                    "context_mapping": {}
+                                },
+                                "title": "StudyFinder",
+                                "title_link": "https:\/\/clinicaltrials.utswmed.org\/",
+                                "media_image_url": "https:\/\/www.utsouthwestern.edu\/assets\/edu-nav-card-study-finder2.jpg",
+                                "media_image_alt": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
